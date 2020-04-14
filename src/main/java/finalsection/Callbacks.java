@@ -15,6 +15,7 @@ public class Callbacks {
 
     }
 
+    //Consumer takes one argument
     static void hello(String firstName, String lastName, Consumer<String> callback) {
         System.out.println(firstName);
         if (lastName != null) {
@@ -24,6 +25,7 @@ public class Callbacks {
         }
     }
 
+    //Runnable takes no arguments
     static void hello2(String firstName, String lastName, Runnable callback) {
         System.out.println(firstName);
         if (lastName != null) {

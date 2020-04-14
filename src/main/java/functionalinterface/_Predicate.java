@@ -26,6 +26,12 @@ public class _Predicate {
                         isPhoneNumberValidPredicate.or(containsNumber3).test("07000000000")
         );
 
+        Predicate<Object> equal = Predicate.isEqual(1);
+        System.out.println(equal.test(2));
+
+        Predicate<Object> not = Predicate.not(equal);
+        System.out.println(not.test(2));
+
     }
 
     static boolean isPhoneNumberValid(String phoneNumber) {
